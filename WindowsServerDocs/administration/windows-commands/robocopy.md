@@ -44,6 +44,7 @@ robocopy <Source> <Destination> [<File>[ ...]] [<Options>]
 |/z|Copies files in restartable mode.|
 |/b|Copies files in Backup mode.|
 |/zb|Uses restartable mode. If access is denied, this option uses Backup mode.|
+|/j|Copy using unbuffered I/O (recommended for large files).|
 |/efsraw|Copies all encrypted files in EFS RAW mode.|
 |/copy:\<CopyFlags>|Specifies the file properties to be copied. The following are the valid values for this option:</br>**D** Data</br>**A** Attributes</br>**T** Time stamps</br>**S** NTFS access control list (ACL)</br>**O** Owner information</br>**U** Auditing information</br>The default value for **CopyFlags** is **DAT** (data, attributes, and time stamps).|
 |/dcopy:\<copyflags\>|Defines what to copy for directories. Default is DA. Options are D = data, A = attributes, and T = timestamps.|
